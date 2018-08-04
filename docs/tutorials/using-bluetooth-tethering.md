@@ -101,6 +101,43 @@ If you are using an older version, please upgrade.
 
         This is mostly figured out [here](https://github.com/ev3dev/ev3dev/issues/232#issuecomment-69801370).
         We just need someone to make it pretty.
+        
+    *   {: tap="10"}
+        {% include /style/icon.html type-"warning" &}
+        
+    Prerequisites
+        Must have putty installed on your machine.
+        putty.org is where you can download it.
+
+    1. On the robot navigate to tethering, which is in Wireless and Networks > Tethering. (Make sure that bluetooth is      
+       enabled).
+
+    2. Turn on bluetooth on the robot, which in under Wireless and Networks > Bluetooth. (Make sure Powered is enabled).
+
+    3. Turn Bluetooth on your computer, this can be found by hitting the windows key, typing in "Settings", hitting enter,  
+       typing in "Bluetooth", hitting enter.
+
+    4. On the robot start the scan and then you will see your computer under devices. (You might have to scroll down).
+
+    5. Select your computer and hit pair.
+
+    6. Confirm that the pin on your robot and computer are the same and click accept.
+    
+    7. On the robot under Network Connection select connect.
+
+    8. Give your robot a second to connect the bluetooth symbol in the upper right should change slightly.
+
+    9. If any error pops up saying there was a timeout it's alright. As long as there is now a number in the upper lefthand 
+       corner of the screen. (If there is no number then you must go back up a menu by hitting the top left button of the 
+       robot, and selecting remove. And do steps 4-9 again).
+
+    10. Now on your computer open putty make sure SSH is selected and type the number actually as it appears from your robot
+        (Ex. 169.254.26.160). Hit Enter. A popup should appear, select yes.
+
+    11. Login with the following credentials
+        username: robot
+        password: maker
+        
     {: tab-list="os-version"}
 {: tab-list="os"}
 
